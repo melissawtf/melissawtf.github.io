@@ -1,17 +1,17 @@
-html, 
+html,
 body {
   background-color: #99C8FF;
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100vh;
-  font-size: 62.5%
+  font-size: 62.5%;
 }
 
-.wrapper { 
+.wrapper {
   width: 100%;
   height: 100%;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@ svg {
   top: 0;
   left: 0;
   transform: translate(110%, 190%);
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .walking {
@@ -49,16 +49,14 @@ svg {
 .eevee {
   float: right;
   top: 50%;
-  
-  &-standing--1 {
-    position: absolute;
-    animation: standingToHappy 5s linear infinite;
-  }
-  
-  &-happy {
-    position: absolute;
-    animation: happyToStanding 5s linear infinite;
-  }
+}
+.eevee-standing--1 {
+  position: absolute;
+  animation: standingToHappy 5s linear infinite;
+}
+.eevee-happy {
+  position: absolute;
+  animation: happyToStanding 5s linear infinite;
 }
 
 .sleepy {
@@ -74,27 +72,22 @@ svg {
   animation: zzz 20s linear infinite;
 }
 
-
-
-
-
 @keyframes walkingMovement {
-  100%,
-  0% {
+  100%, 0% {
     opacity: 1;
     transform: rotateY(180deg);
     animation-timing-function: steps(1, end);
   }
   7.5% {
-    transform: translate(.3rem, -.3rem) rotateY(180deg);
+    transform: translate(0.3rem, -0.3rem) rotateY(180deg);
     animation-timing-function: steps(1, end);
   }
   10% {
-    transform: translate(.6rem, 0rem) rotateY(180deg);
+    transform: translate(0.6rem, 0rem) rotateY(180deg);
     animation-timing-function: steps(1, end);
   }
   17.5% {
-    transform: translate(.9rem, -.3rem) rotateY(180deg);
+    transform: translate(0.9rem, -0.3rem) rotateY(180deg);
     animation-timing-function: steps(1, end);
   }
   20% {
@@ -106,90 +99,74 @@ svg {
     animation-timing-function: steps(1, end);
   }
   32.5% {
-    transform: translate(.9rem, -.3rem);
+    transform: translate(0.9rem, -0.3rem);
     animation-timing-function: steps(1, end);
   }
   35% {
-    transform: translate(.6rem, 0rem);
+    transform: translate(0.6rem, 0rem);
     animation-timing-function: steps(1, end);
   }
   42.5% {
-    transform: translate(.3rem, -.3rem);
+    transform: translate(0.3rem, -0.3rem);
     animation-timing-function: steps(1, end);
   }
   45% {
     transform: translate(0rem, 0rem);
     animation-timing-function: steps(1, end);
   }
-  
   50% {
     opacity: 0;
     animation-timing-function: steps(1, end);
   }
 }
-
 @keyframes toSleep {
-  100%,
-  0% {
+  100%, 0% {
     opacity: 0;
     animation-timing-function: steps(1, end);
   }
-  
   50% {
     opacity: 1;
     animation-timing-function: steps(1, end);
   }
 }
-
 @keyframes standingToHappy {
-  100%,
-	0% {
+  100%, 0% {
     opacity: 1;
     animation-timing-function: steps(1, end);
-	}
-  
+  }
   50% {
     opacity: 0;
     animation-timing-function: steps(1, end);
   }
-  
   60% {
     opacity: 1;
     animation-timing-function: steps(1, end);
   }
-  
   95% {
     opacity: 0;
     animation-timing-function: steps(1, end);
   }
 }
-
 @keyframes happyToStanding {
-  100%,
-	0% {
+  100%, 0% {
     opacity: 0;
     animation-timing-function: steps(1, end);
-	}
-  
+  }
   50% {
     opacity: 1;
     animation-timing-function: steps(1, end);
   }
-  
   60% {
     opacity: 0;
     animation-timing-function: steps(1, end);
   }
-  
   95% {
     opacity: 1;
     animation-timing-function: steps(1, end);
   }
 }
-
 @keyframes zzz {
-  100%,
-  0% {
+  100%, 0% {
     opacity: 0;
     animation-timing-function: steps(1, end);
   }
